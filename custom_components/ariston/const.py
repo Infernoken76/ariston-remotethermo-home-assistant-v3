@@ -976,7 +976,7 @@ ARISTON_SELECT_TYPES: list[AristonSelectEntityDescription] = [
         option: entity.device.async_set_water_heater_operation_mode(option),
         system_types=[SystemType.VELIS],
         whe_types=[
-            WheType.Andris2,
+            WheType.Andris2, #NICK
             WheType.Evo,
         ],
     ),
