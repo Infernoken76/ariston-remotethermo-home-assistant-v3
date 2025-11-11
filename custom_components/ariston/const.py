@@ -495,6 +495,7 @@ ARISTON_SENSOR_TYPES: list[AristonSensorEntityDescription] = [
             WheType.Evo2,
             WheType.Lux2,
             WheType.Lydos,
+            WheType.Andris2, #NICK
         ],
     ),
     AristonSensorEntityDescription(
@@ -974,6 +975,9 @@ ARISTON_SELECT_TYPES: list[AristonSelectEntityDescription] = [
         select_option=lambda entity,
         option: entity.device.async_set_water_heater_operation_mode(option),
         system_types=[SystemType.VELIS],
-        whe_types=[WheType.Evo],
+        whe_types=[
+            WheType.Andris2,
+            WheType.Evo,
+        ],
     ),
 ]
