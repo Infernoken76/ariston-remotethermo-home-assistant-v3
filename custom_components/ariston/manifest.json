@@ -1,7 +1,7 @@
 {
   "domain": "ariston",
   "name": "Ariston",
-  "codeowners": ["@fustom"],
+  "codeowners": ["@Infernoken76"],
   "config_flow": true,
   "dependencies": [],
   "documentation": "https://github.com/Infernoken76/ariston-remotethermo-home-assistant-v3",
