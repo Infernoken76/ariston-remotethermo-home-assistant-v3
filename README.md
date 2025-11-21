@@ -2,6 +2,13 @@
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/hacs/integration)
 [![HACS Action](https://github.com/fustom/ariston-remotethermo-home-assistant-v3/actions/workflows/hacs.yml/badge.svg)](https://github.com/fustom/ariston-remotethermo-home-assistant-v3/actions/workflows/hacs.yml)
 [![Validate with hassfest](https://github.com/fustom/ariston-remotethermo-home-assistant-v3/actions/workflows/hassfest.yml/badge.svg)](https://github.com/fustom/ariston-remotethermo-home-assistant-v3/actions/workflows/hassfest.yml)
+# Added full support for Ariston Andris Elite WiFi 30L Hot Water Boiler
+This integration adds additional features for the Ariston Andris Elite WiFi 30L and is based on the repository from fustom
+- Boost mode  (next to Manual & Program mode)
+- Add 'remaining time' support
+- Add 'operation mode' support
+- Update reference to own "python-ariston-api" github repository as this also needs updates to add BOOST mode
+
 # Ariston NET remotethermo integration for Home Assistant
 This integration inspired by chomupashchuk fantastic work https://github.com/chomupashchuk/ariston-remotethermo-home-assistant-v2
 But it does not use Ariston website. It uses Ariston API what I reversed engineered.
@@ -17,25 +24,14 @@ But it does not use Ariston website. It uses Ariston API what I reversed enginee
 | Less sensors, switches, etc |  More sensors, switches, etc |
 | New code, may contains lot of bugs | Old, tested code |
 
-## TODO
-- Localization. Avaliable in english, catalan, italian, russian and ukranian.
-- More sensors, switches, binary sersors, selectors, services.
-- Exception handling.
-- More logs.
-- Unit tests.
-- Fun.
-
 ## Integration was tested on and works with:
 - Ariston Alteas One 24
 - Ariston Velis Evo
 - Ariston Velis Lux
 - Ariston Lydos Hybrid
+- Ariston Andris Elite WiFi 30L >> ADDED
 
 Feel free to test something else and create new issue / pull request if something goes wrong.
-
-## Installation
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=fustom&repository=ariston-remotethermo-home-assistant-v3&category=integration) or copy ariston folder to your configuration/custom_components path.
-Use the add integration UI to set up your device.
 
 | ![Kazam_screenshot_00003](https://user-images.githubusercontent.com/6751243/146653448-ff7b6f9d-cbf1-4555-9a75-61bf68bc9d3e.png) | ![Kazam_screenshot_00004](https://user-images.githubusercontent.com/6751243/146653484-52e39d78-7c6f-44ae-888d-acf246147290.png) | ![Kazam_screenshot_00010](https://user-images.githubusercontent.com/6751243/147890590-6c4ebf38-16d9-421f-9b81-8f43298ec62f.png) |
 :-------------------------:|:-------------------------:|:-------------------------:
